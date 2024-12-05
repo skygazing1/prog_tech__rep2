@@ -16,3 +16,7 @@ df3 = pd.read_excel(file3_path)
 # для файла 1 с 1
 df1['id'] = range(1, len(df1) + 1)
 
+# для файла 2 с последнего id файла 1 + 1
+start_id_2 = df1['id'].max() + 1
+df2['id'] = range(start_id_2, start_id_2 + len(df2))
+
