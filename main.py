@@ -1,10 +1,7 @@
 ## main стартовый модуль проекта
 
-from functions import func1, func2
-
-def main():
-    pass
+from smth_mod import update_ids
 
 # инициализационный скрипт 
 if __name__ == "__main__": 
-    main()
+    update_ids()
